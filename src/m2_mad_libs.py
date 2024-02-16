@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   In this module, we are going to create a program that will allow a user to
 #   do a simple mad lib.
@@ -27,9 +27,23 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def get_word(PART_OF_SPEECH):
+    firstword = input(f"please enter a(n) {PART_OF_SPEECH}: ")
+    return firstword
 
+def get_noun():
+    second_word = input("Please enter a noun: ")
+    return second_word
+
+def get_verb_ing():
+    third_word = input("Please enter a verb ending in -ing: ")
+    return third_word
+
+def get_adjective():
+    for_word = input("Please enter an adjective: ")
+    return for_word
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE: 2. (3 pts)
 #
 #   Now, write a function called name() that simply asks the user to enter
 #   their name and return the name they enter.
@@ -42,9 +56,11 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+def name():
+    name1 = input("Please enter your name:")
+    return name1
 ###############################################################################
-# TODO: 3. (9 pts)
+# DONE: 3. (9 pts)
 #
 #   Now, let's put it all together.
 #
@@ -68,3 +84,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+    print("Let's play Mad Libs!")
+    name1 = name()
+    print(f"Welcome, {name1}")
+    noun = get_noun()
+    verb_ing = get_verb_ing()
+    adjective = get_adjective()
+    print(f"This semester, I hope to join the {noun} club and go {verb_ing}. It is going to be a(n) {adjective} semester!")
+main()

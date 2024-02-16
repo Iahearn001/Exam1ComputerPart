@@ -56,7 +56,7 @@ def review():
     review2 = input("Please enter a brief review:")
     return review2
 ###############################################################################
-# TODO: 4. (7 pts)
+# DONE: 4. (7 pts)
 #
 #   Now, let's put it all together.
 #
